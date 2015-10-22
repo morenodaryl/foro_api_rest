@@ -8,13 +8,18 @@ gem 'rails-api'
 gem 'spring', :group => :development
 
 
-gem 'sqlite3'
 
 
 gem 'rack-cors'
 gem 'tzinfo-data'
 
+group :development do
+	gem 'sqlite3'
+end
 
+group :production do
+	gem 'pg'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
