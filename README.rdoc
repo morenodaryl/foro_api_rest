@@ -3,8 +3,8 @@
 Esta aplicación se creo en el foro de desarollo móvil UNI RUACS 2015 en donde se hace un ejemplo de como hacer un proyecto de rails basandonos en la gema rails-api
 
 Se hizo un deploy a la plataforma de heroko, podemos previsualizarlo desde este link http://apiuni.herokuapp.com/
-
-=== Para correr el proyecto tienen que seguir los siguiente pasos
+----
+=== Para probar el proyecto tienen que seguir los siguiente pasos.
 1. Hacer un <tt>bundle install</tt> para instalar todas las gemas que estan dentro del gemfile 
 2. Hacer una migración a la base de datos con el comando <tt>rake db:migrate</tt> 
-3. Correr el servidor con el comando <tt>rails server</tt> y abrir el navegador en <tr>localhost:3000</tr>
+3. Correr el servidor con el comando <tt>rails server</tt> y abrir el navegador en <tt>localhost:3000</tt>
