@@ -1,28 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esta aplicación se creo en el foro de desarollo móvil UNI RUACS 2015 en donde se hace un ejemplo de como hacer un proyecto de rails basandonos en la gema rails-api
 
-Things you may want to cover:
+Se hizo un deploy a la plataforma de heroko, podemos previsualizarlo desde este link http://apiuni.herokuapp.com/
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+=== Para correr el proyecto tienen que seguir los siguiente pasos
+1. Hacer un <tt>bundle install</tt> para instalar todas las gemas que estan dentro del gemfile 
+2. Hacer una migración con el comando <tt>rake db:migrate</tt> 
+3. Correr el servidor con el comando <tt>rails server</tt>
