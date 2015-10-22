@@ -6,5 +6,5 @@ Se hizo un deploy a la plataforma de heroko, podemos previsualizarlo desde este 
 
 === Para correr el proyecto tienen que seguir los siguiente pasos
 1. Hacer un <tt>bundle install</tt> para instalar todas las gemas que estan dentro del gemfile 
-2. Hacer una migración con el comando <tt>rake db:migrate</tt> 
-3. Correr el servidor con el comando <tt>rails server</tt>
+2. Hacer una migración a la base de datos con el comando <tt>rake db:migrate</tt> 
+3. Correr el servidor con el comando <tt>rails server</tt> y abrir el navegador en <tr>localhost:3000</tr>
