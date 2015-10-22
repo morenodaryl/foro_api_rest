@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Api creada en el foro de desarrollo movil</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	<style type="text/css">
+		.primer_div{
+			width: 100%;
+			height: 250px;
+			position: fixed;
+			top: 0;
+			z-index: -1;
+			/*background-image: url(img/bg.png);*/
+			/*background-size: cover;*/
+			/*background-position: 0px -300px;*/
+		}
+		.container{
+			padding: 8px;
+			margin-top: 180px;
+		}
+		.mt{
+			margin-top: 8px;
+		}
+
+		.mt\+\+{
+			margin-top: 40px;
+		}
+
+		.mb\+\+{
+			margin-bottom: 40px;
+		}
+
+		.p{
+			padding: 8px;
+		}
+		.pl{
+			padding-left: 20px;
+		}
+		.pl\+{
+			padding-left: 40px;
+		}
+		.nombres {
+		    font-size: 1.5rem;
+		    line-height: 1.5rem;
+		    margin-bottom: 0px;
+		}
+		.descripcion{
+			margin-top: 0;
+		}
+	</style>
+</head>
+<body class="red darken-1">
+	<div class="primer_div red darken-4">
+		
+	</div>
+	<div class="container white z-depth-2 mb++">
+		<header class="center mb++">
+			<h1>API REST</h1>	
+			<h5>Api desarrollada en ruby on rails para el foro de desarrollo movil UNI RUACS.</h5>
+		</header><!-- /header -->
+		<div class="divider"></div>
+		<div class="p mb++">
+			<h4 class="center">Recursos de contactos</h4>
+			<table>
+				<thead>
+					<tr>
+						<th>URI</th>
+						<th>HTTP</th>
+						<th>Acción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>/contactos</td>
+						<td>GET</td>
+						<td>Ver todos los contactos.</td>
+					</tr>
+					<tr>
+						<td>/contactos</td>
+						<td>POST</td>
+						<td>
+						Agregar un nuevo contacto. <br>
+						Para crear un nuevo recurso tendremos que mandar los siguientes parametros:
+						<div class="grey lighten-2 p">
+							{<br><span class="pl">"contacto": {</span><br>
+								<span class="pl+">"nombre": "Nombre del contacto",</span><br>
+								<span class="pl+">"correo": "correo de la persona",</span><br>
+								<span class="pl+">"edad": "edad de tipo integer"</span><br>
+								<span class="pl">}</span><br>
+							}
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>/contactos/:id</td>
+						<td>GET</td>
+						<td>
+							Ver un contacto con el id especificado en la URI
+						</td>
+					</tr>
+					<tr>
+						<td>/contactos/:id</td>
+						<td>PUT | PATCH</td>
+						<td>
+							Actualizar un recurso. para actualizar un contacto se debe de seguir la misma lógica del metodo post.
+						</td>
+					</tr>
+					<tr>
+						<td>/contactos/:id</td>
+						<td>DELETE</td>
+						<td>
+							Eliminar recurso. para eliminar un contacto se hace solo especificando el id por la URI.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="">
+			<div class="divider"></div>
+			<h4 class="center mb++">Desarrolladores</h4>
+			<div class="row pl">
+				<div class="col s12 m6 center">
+					<img src="/img/daryl.png" alt="">
+					<p class="nombres">Daryl Morneo</p>
+					<p class="descripcion">Estudiante Ingeniería en Sistemas <br> | Backend | Frontend |</p>
+				</div>
+				<div class="col s12 m6 center">
+					<img src="/img/carlos.png" alt="">
+					<p class="nombres">Carlos Merlos</p>
+					<p class="descripcion">Estudiante Ingeniería en Sistemas <br> | Desarrollo Movil |</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

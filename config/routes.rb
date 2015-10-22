@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'welcome/index'
+
   resources :contactos, except: [:new, :edit]
 
   # match "*unmatched", via: [:options], to: "contactos#xhr_options_request"
